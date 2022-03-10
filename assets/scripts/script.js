@@ -1,10 +1,18 @@
 function TicketPrice() {
-    let age = document.querySelector("#age").value;
-    let km = document.querySelector("#km").value;
-    let price = document.querySelector("#price");
-    let total = document.querySelector("#total");
 
-    price.style.display = "block";
+    // INPUT
+    let name = document.querySelector("#name").value;
+    
+    let km = document.querySelector("#km").value;
+
+
+    // OUTPUT
+    let ticket_name = document.querySelector("#ticket-name");
+    let ticket_type = document.querySelector("#ticket-type");
+    let wagon = document.querySelector("#wagon");
+    let serial = document.querySelector("#serial");
+    let price = document.querySelector("#price");
+
 
     finalprice = km * 0.21;
     if (age < 18) {
