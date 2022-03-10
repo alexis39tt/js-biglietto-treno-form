@@ -1,4 +1,5 @@
 function TicketPrice() {
+    document.querySelector(".your-ticket").style.display = "block";
     // INPUT
     let name = document.querySelector("#name").value;
     let eta = document.querySelector("#eta").value;
