@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietti treno</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script rel="text/javascript" src="./assets/scripts/script.js"></script>
+    <header>
+        <i class="fa-solid fa-ticket"></i>
+        <h1>itabo</h1>
+    </header>
+    <main>
+        <form action="#" onsubmit="TicketPrice()">
+            <div class="container">
+                <div class="input-container">
+                    <p>Inserisci l'età:</p>
+                    <input type="number" max="99" id="age" required>
+                </div>
+                <div class="input-container">
+                    <p>Inserisci i km:</p>
+                    <input type="number" min="1" id="km" required>
+                </div>
+                <div class="input-container">
+                    <input type="submit" min="1" value="Calcola">
+                </div>
+                <p class="price">Prezzo: <span id="total">34,89€</span></p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

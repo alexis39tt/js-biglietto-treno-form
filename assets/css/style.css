@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(18, 0, 0, 1) 50%, rgb(54, 0, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+header i {
+    margin-top: 13px;
+}
+
+header * {
+    font-size: 3rem;
+    margin: 0 7.5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container {
+    margin: 20px 0px;
+}
+
+.input-container p {
+    font-size: 1.5rem;
+}
+.input-container p::before{
+    content: "\f105";
+    color: white;
+    font-family: "Font Awesome 6 Free";
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+
+
+.input-container input {
+    width: 250px;
+    margin: 10px 0px 0px;
+    font-size: 1.3rem;
+    padding: 2px;
+    border: 2px solid black;
+    background: white;
+    outline: none;
+}
+
+.input-container input[type=submit] {
+    width: 110px;
+    margin: -20px 0 30px;
+    border-radius: 10px;
+    color: black;
+    padding: 2px;
+    border: 2px solid black;
+    background: #c0c0c0;
+    float: right;
+    cursor: pointer;
+}
+
+.price {
+    font-size: 1.5rem;
+    display: none;
+}
+
+#total {
+    float: right;
+}
