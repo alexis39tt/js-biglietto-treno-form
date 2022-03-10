@@ -23,19 +23,66 @@
     </header>
     <main>
         <form action="#" onsubmit="TicketPrice()">
-            <div class="container">
-                <div class="input-container">
-                    <p>Inserisci l'età:</p>
-                    <input type="number" max="99" id="age" required>
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="container container1">
+                <div class="row">
+                    <div class="col">
+                        <p>Nome Cognome</p>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="col">
+                        <p>Km da percorrere</p>
+                        <input type="number" min="1" id="km" required>
+                    </div>
+                    <div class="col">
+                        <p>Fascia d'età</p>
+                        <select name="eta" id="eta">
+                            <option value="child">Minorenne</option>
+                            <option value="adult">Maggiorenne</option>
+                            <option value="elderly">Over 65</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="input-container">
-                    <p>Inserisci i km:</p>
-                    <input type="number" min="1" id="km" required>
+                <div class="row buttons">
+                    <div class="col">
+                        <input type="submit" value="Genera">
+                        <input type="reset" value="Annulla">
+                    </div>
                 </div>
-                <div class="input-container">
-                    <input type="submit" min="1" value="Calcola">
+            </div>
+            <div class="your-ticket">
+                <h2>IL TUO BIGLIETTO</h2>
+                <div class="container container2">
+                    <div class="row">
+                        <h3>DETTAGLIO PASSEGGERI</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <h5>NOME PASSEGGERO</h5>
+                            <h5 id="ticket-name">Jon Snow</h5>
+                        </div>
+                        <div class="col-8">
+                            <div class="info-container">
+                                <div class="col">
+                                    <p class="bold">Offerta</p>
+                                    <p id="ticket-type">Biglietto standard</p>
+                                </div>
+                                <div class="col">
+                                    <p class="bold">Carrozza</p>
+                                    <p id="wagon">5</p>
+                                </div>
+                                <div class="col">
+                                    <p class="bold">Codice CP</p>
+                                    <p id="serial">92911</p>
+                                </div>
+                                <div class="col">
+                                    <p class="bold">Costo biglietto</p>
+                                    <p id="price">2.10€</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="price">Prezzo: <span id="total">34,89€</span></p>
             </div>
         </form>
     </main>

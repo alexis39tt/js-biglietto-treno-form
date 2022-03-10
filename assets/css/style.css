@@ -7,7 +7,7 @@
 html {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: rgb(134, 0, 0);
 }
 
 body {
@@ -18,14 +18,33 @@ body {
     background-size: cover;
 }
 
-input{
+input, select, option{
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border: 2px solid rgb(134, 0, 0);
+    outline: none;
+    padding: 5px;
+}
+
+input[type="number"], input[type="text"]{
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+    margin: 50px 0px 10px;
+    color: white;
+}
+
+h5{
+    font-size: 1.1rem;
 }
 
 header {
     display: flex;
     justify-content: center;
-    padding: 50px 0px;
+    padding: 50px 0px 30px;
+    color: white;
 }
 
 header i {
@@ -44,50 +63,72 @@ main {
 }
 
 .container {
+    box-shadow: 5px 5px 10px 0px black;
+    background-color: white;
+}
+
+.container1{
+    border-radius: 7px;
+    padding: 20px 100px;
+}
+
+.container1 .row{
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 
-.input-container {
-    margin: 20px 0px;
+.container1 .col{
+    width: calc(100%/3);
+    margin: 0px 30px;
+    text-align: center;
 }
 
-.input-container p {
-    font-size: 1.5rem;
-}
-.input-container p::before{
-    content: "\f105";
-    color: white;
-    font-family: "Font Awesome 6 Free";
-    font-size: 1rem;
-    font-weight: 600;
-    position: absolute;
-    margin-left: -15px;
-    margin-top: 10px;
+.buttons{
+    margin-top: 30px;
 }
 
-
-.input-container input {
-    width: 250px;
-    margin: 10px 0px 0px;
-    font-size: 1.3rem;
-    padding: 2px;
-    border: 2px solid black;
-    background: white;
-    outline: none;
-}
-
-.input-container input[type=submit] {
-    width: 110px;
-    margin: -20px 0 30px;
-    border-radius: 10px;
-    color: black;
-    padding: 2px;
-    border: 2px solid black;
-    background: #c0c0c0;
-    float: right;
+.buttons input{
+    color:rgb(134, 0, 0);
+    font-weight: 800;
+    margin: 0px 7px;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.container2{
+    padding: 15px 15px 0px;
+    color: black;
+}
+
+.container2 .col-4{
+    width: 225px;
+    height: 124px;
+    background-color: gray;
+    display: inline-block;
+    padding: 15px;
+}
+
+.container2 .col-8{
+    width: calc(100% - 230px);
+    display: inline-block;
+    border: 1px solid gray;
+    border-right: none;
+    transform: translate(-5px, -36px);
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.info-container p{
+    font-size: 0.8rem;
+}
+
+.info-container p.bold{
+    font-weight: bold;
+    margin-bottom: 50px;
 }
 
 .price {

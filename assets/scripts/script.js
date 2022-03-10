@@ -1,7 +1,7 @@
 function TicketPrice() {
     let age = document.querySelector("#age").value;
     let km = document.querySelector("#km").value;
-    let price = document.querySelector(".price");
+    let price = document.querySelector("#price");
     let total = document.querySelector("#total");
 
     price.style.display = "block";
