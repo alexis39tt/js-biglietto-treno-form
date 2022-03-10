@@ -1,8 +1,7 @@
 function TicketPrice() {
-
     // INPUT
     let name = document.querySelector("#name").value;
-    
+    let eta = document.querySelector("#eta").value;
     let km = document.querySelector("#km").value;
 
 
@@ -13,15 +12,25 @@ function TicketPrice() {
     let serial = document.querySelector("#serial");
     let price = document.querySelector("#price");
 
+    ticket_name.innerHTML = name;
 
-    finalprice = km * 0.21;
-    if (age < 18) {
+    wagon.innerHTML = Math.ceil(Math.random()*10);
+    serial.innerHTML = Math.round(Math.random()*100000);
+
+    let finalprice = km * 0.21;
+
+    if (eta == "child") {
         finalprice = finalprice - finalprice * 20 / 100;
+        ticket_type.innerHTML = "Biglietto scontato";
     }
-    else if (age >= 65) {
+    else if (eta == "elderly") {
         finalprice = finalprice - finalprice * 40 / 100;
+        ticket_type.innerHTML = "Biglietto scontato";
+    }
+    else{
+        ticket_type.innerHTML = "Biglietto standard";
     }
 
     finalprice = Math.round(finalprice * 100) / 100;
-    total.innerHTML = `${finalprice} €`;
+    price.innerHTML = `${finalprice} €`;
 }
